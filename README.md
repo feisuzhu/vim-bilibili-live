@@ -1,7 +1,9 @@
 # vim-bilibili-live
 
 ## 说明
-这是一个可以让你在 Powerline 里看到 Bilibili 直播中的弹幕的插件
+这是一个可以让你在 Powerline 里看到 Bilibili 直播中的弹幕的插件。
+
+貌似没什么用…… 只是为了让我在直播写码的时候能方便的看到弹幕。
 
 ## 截图
 ![Screenshot1](../screenshot/1.png?raw=true)
@@ -12,7 +14,7 @@
 ## 安装
 
 这个插件需要 [Powerline](http://github.com/powerline/powerline) 来工作。
-不是 `vim-powerline` !
+注意不是 `vim-powerline` !
 
 用你最喜欢的插件管理器
 
