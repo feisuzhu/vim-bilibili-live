@@ -4,8 +4,10 @@
 这是一个可以让你在 Powerline 里看到 Bilibili 直播中的弹幕的插件
 
 ## 截图
-![Screenshot1](../screenshot/1.jpg?raw=true)
-![Screenshot2](../screenshot/2.jpg?raw=true)
+![Screenshot1](../screenshot/1.png?raw=true)
+![Screenshot2](../screenshot/2.png?raw=true)
+
+三栏分别是：在线人数、发送弹幕的用户、弹幕内容
 
 ## 安装
 
