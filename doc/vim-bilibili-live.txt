@@ -1,0 +1,25 @@
+*vim-bilibili-live.txt* A short multi line description of your plugin
+
+===============================================================================
+CONTENTS                                                    *vim-bilibili-live*
+
+    1. Intro ........................................ |vim-bilibili-live-intro|
+    2. Requirements .......................... |vim-bilibili-live-requirements|
+    3. Usage ........................................ |vim-bilibili-live-usage|
+    4. Licence .................................... |vim-bilibili-live-licence|
+===============================================================================
+1. Intro                                              *vim-bilibili-live-intro*
+
+Overview of plugin
+
+2. Requirements                                *vim-bilibili-live-requirements*
+
+What additional programs are required to run the plugin
+
+3. Usage                                              *vim-bilibili-live-usage*
+
+How to use the plugin. What functions does it give the user?
+
+4. Licence                                          *vim-bilibili-live-licence*
+
+This is open source make sure to include a licence
