@@ -5,21 +5,67 @@ CONTENTS                                                    *vim-bilibili-live*
 
     1. Intro ........................................ |vim-bilibili-live-intro|
     2. Requirements .......................... |vim-bilibili-live-requirements|
-    3. Usage ........................................ |vim-bilibili-live-usage|
-    4. Licence .................................... |vim-bilibili-live-licence|
+    3. Configuration......................... |vim-bilibili-live-configuration|
+    4. Commands................................... |vim-bilibili-live-commands|
+    5. Licence .................................... |vim-bilibili-live-licence|
 ===============================================================================
 1. Intro                                              *vim-bilibili-live-intro*
 
-Overview of plugin
+This plugin will let you view Bilibili Live danmaku in Powerline statusline.
 
+===============================================================================
 2. Requirements                                *vim-bilibili-live-requirements*
 
-What additional programs are required to run the plugin
+This plugin requires Powerline (the python ver, not legacy vim-powerline).
 
-3. Usage                                              *vim-bilibili-live-usage*
+===============================================================================
+3. Configuration                                      *vim-bilibili-live-usage*
 
-How to use the plugin. What functions does it give the user?
+You need to do some manual configuration.
+Install powerline and vim-bilibili-live with your favorate plugin manager:
 
+    " For example, Vundle
+    Plugin "powerline/powerline"
+    Plugin "feisuzhu/vim-bilibili-live"
+
+After installation, you need to configure powerline theme to add this in.
+If you aren't doing any customization to your powerline, theme config
+should be located here(assuming you are using Vundle):
+
+    ~/.vim/bundle/powerline/powerline/config_files/themes/vim/default.json
+
+Add following entry before 'powerline.segments.vim.plugin.tagbar.current_tag':
+
+    {
+        "exclude_modes": ["nc"],
+        "function": "vim_bilibili_live.bilibili_live",
+        "draw_inner_divider": true,
+        "priority": 20
+    }
+
+===============================================================================
+4. Commands                                        *vim-bilibili-live-commands*
+
+:BilibiliLiveConnect                                     *:BilibiliLiveConnect*
+
+Start receiving danmaku from livecast.
+
+Assuming you are interested in this one
+
+    http://live.bilibili.com/10920
+
+Example: >
+    :BilibiliLiveConnect 10920
+<
+
+:BilibiliLiveDisconnect                               *:BilibiliLiveDisconnect*
+
+Turn off danmaku display.
+
+Example: >
+    :BilibiliLiveDisconnect
+<
 4. Licence                                          *vim-bilibili-live-licence*
 
-This is open source make sure to include a licence
+WTFPL.
+Do what the fuck you want.
